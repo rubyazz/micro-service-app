@@ -58,8 +58,5 @@ test:  ## Run tests
 migrate:  ## Apply latest alembic migrations
 	$(PYTHON) -m alembic upgrade head
 
-serve:  ## Run application server in development
-	$(PYTHON) main.py
-
 run:
-	uvicorn src/main:app --reload
+	uvicorn src.main:app --reload --port=8000
