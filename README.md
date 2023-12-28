@@ -8,6 +8,9 @@ dotenv
 sqlalchemy
 alembic
 fastapi-admin
+celery
+nginx
+monitoring
 
 
 Optional Dependencies¶
