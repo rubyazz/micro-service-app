@@ -60,3 +60,6 @@ migrate:  ## Apply latest alembic migrations
 
 run:
 	uvicorn src.main:app --reload --port=8000
+
+linter:
+	pre-commit run --all-files

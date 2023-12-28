@@ -1,10 +1,10 @@
 # micro-service-app
 Project that to be ready for tech taking a job
 
-docker 
-redis 
-fastapi 
-dotenv 
+docker
+redis
+fastapi
+dotenv
 sqlalchemy
 alembic
 fastapi-admin
