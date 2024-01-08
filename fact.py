@@ -38,5 +38,12 @@
 # print(buble_sort(arr))
 
 
-def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
-    pass
+arr = [2, 45, 12, 8]
+
+for i in range(len(arr)):
+    mini = arr[i]
+    for j in range(i + 1):
+        if arr[i] < arr[j]:
+            mini = j
+            arr[j], arr[i] = arr[i], arr[j]
+print(arr)
