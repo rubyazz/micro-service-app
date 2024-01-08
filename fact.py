@@ -36,3 +36,7 @@
 # arr = [8888, -451, 1, 45, 2, 0, 54, 4545, -45, 62, 15]
 
 # print(buble_sort(arr))
+
+
+def TowerOfHanoi(n, from_rod, to_rod, aux_rod):
+    pass
