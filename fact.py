@@ -38,12 +38,14 @@
 # print(buble_sort(arr))
 
 
-arr = [2, 45, 12, 8]
+# selection sort
 
-for i in range(len(arr)):
-    mini = arr[i]
-    for j in range(i + 1):
-        if arr[i] < arr[j]:
-            mini = j
-            arr[j], arr[i] = arr[i], arr[j]
-print(arr)
+# arr = [2, 45, 12, 8]
+
+# for i in range(len(arr)):
+#     mini = arr[i]
+#     for j in range(i + 1):
+#         if arr[i] < arr[j]:
+#             mini = j
+#             arr[j], arr[i] = arr[i], arr[j]
+# print(arr)
