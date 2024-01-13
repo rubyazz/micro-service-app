@@ -49,3 +49,68 @@
 #             mini = j
 #             arr[j], arr[i] = arr[i], arr[j]
 # print(arr)
+
+
+# mishka i starshi brat
+
+# l = int(input())
+# b = int(input())
+# k = 0
+
+# while l <= b:
+#     k = k + 1
+#     l = l * 3
+#     b = b * 2
+
+# print(k)
+
+
+# B. Красивый год
+# a = input()
+
+# a = int(a) + 1
+
+# b = set(str(a))
+
+# while len(set(b)) != 4:
+#     a = int(a) + 1
+#     b = set(str(a))
+
+# print(a)
+
+# C. Аукцион второй цены
+members = int(input())
+money = 0
+x = [int(x) for x in input().split()]
+
+for i in range(x):
+    if money == x:
+        print(members, money)
+
+# return members, money
+
+# H. Перевод
+
+# s = input()
+# t = input()
+
+# reversed_one = t[::-1]
+
+# if s == reversed_one:
+#     print("YES")
+# else:
+#     print("NO")
+
+# G. Цветные камешки (упрощ. редакция)
+
+# s = input()
+# t = input()
+
+
+# counter = 0
+
+# for i in range(len(t)):
+#     if counter < len(s) and s[counter] == t[i]:
+#         counter = counter + 1
+
+# print(counter + 1)
