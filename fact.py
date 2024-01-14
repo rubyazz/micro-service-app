@@ -25,19 +25,6 @@
 # print(pali(word, first, last))
 
 
-# def buble_sort(list):
-#     for i in range(len(arr)):
-#         for j in range(i):
-#             if arr[i] < arr[j]:
-#                 arr[i], arr[j] = arr[j], arr[i]
-#     return arr
-
-
-# arr = [8888, -451, 1, 45, 2, 0, 54, 4545, -45, 62, 15]
-
-# print(buble_sort(arr))
-
-
 # selection sort
 
 # arr = [2, 45, 12, 8]
@@ -79,13 +66,13 @@
 # print(a)
 
 # C. Аукцион второй цены
-members = int(input())
-money = 0
-x = [int(x) for x in input().split()]
+# members = int(input())
+# money = 0
+# x = [int(x) for x in input().split()]
 
-for i in range(x):
-    if money == x:
-        print(members, money)
+# for i in range(x):
+#     if money == x:
+#         print(members, money)
 
 # return members, money
 
@@ -114,3 +101,23 @@ for i in range(x):
 #         counter = counter + 1
 
 # print(counter + 1)
+
+# buble sort
+# buble sort
+
+
+def swap(a, b, massive):
+    massive[a], massive[b] = massive[b], massive[a]
+
+
+def buble(arr):
+    for i in range(len(arr)):
+        for j in range(i):
+            if arr[i] < arr[j]:
+                swap(i, j, arr)
+    return arr
+
+
+array = [12, 5, 1523, 15, -54, -5, 0, 45555]
+
+print(buble(array))
