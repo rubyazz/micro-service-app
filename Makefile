@@ -59,7 +59,7 @@ migrate:  ## Apply latest alembic migrations
 	$(PYTHON) -m alembic upgrade head
 
 run:
-	uvicorn src.main:app --reload --port=8000
+	uvicorn main:app --reload --port=8000
 
 linter:
 	pre-commit run --all-files
