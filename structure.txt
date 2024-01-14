@@ -1,0 +1,42 @@
+Service name: Task Tracker Service
+
+
+task_tracker_app/
+|-- app/
+|   |-- api/
+|   |   |-- init.py
+|   |   |-- v1/
+|   |       |-- init.py
+|   |       |-- end_points/
+|   |           |-- init.py
+|   |           |-- tasks.py
+|   |           |-- users.py
+|   |-- core/
+|   |   |-- init.py
+|   |   |-- config.py
+|   |   |-- database.py
+|   |   |-- security.py
+|   |-- models/
+|   |   |-- init.py
+|   |   |-- task.py
+|   |   |-- user.py
+|   |-- crud/
+|   |   |-- init.py
+|   |   |-- task.py
+|   |   |-- user.py
+|   |-- schemas/
+|       |-- init.py
+|       |-- task.py
+|       |-- user.py
+|-- alembic/
+|   |-- versions/
+|       |-- init.py
+|-- tests/
+|   |-- init.py
+|   |-- test_tasks.py
+|   |-- test_users.py
+|-- .gitignore
+|-- alembic.ini
+|-- main.py
+|-- requirements.txt
+|-- README.md

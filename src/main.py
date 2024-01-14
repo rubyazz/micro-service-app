@@ -5,10 +5,15 @@ app = FastAPI(title="Microservice App")
 
 
 @app.get("/users/")
-def get_hello():
+async def get_hello():
     return "Hello world!"
 
 
 @app.post("/users/")
-def init_users():
+async def init_users():
     return "initiation users"
+
+
+@app.delete("users/{id}")
+async def delete_users():
+    return "deleting users"
