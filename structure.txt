@@ -40,3 +40,6 @@ task_tracker_app/
 |-- main.py
 |-- requirements.txt
 |-- README.md
+
+
+we need redis and celery
