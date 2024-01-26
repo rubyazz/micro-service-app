@@ -43,3 +43,4 @@ task_tracker_app/
 
 
 we need redis and celery
+need to add docker for containering and make autodeployment for ci integrations
