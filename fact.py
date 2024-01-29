@@ -106,18 +106,86 @@
 # buble sort
 
 
-def swap(a, b, massive):
-    massive[a], massive[b] = massive[b], massive[a]
+# def swap(a, b, massive):
+#     massive[a], massive[b] = massive[b], massive[a]
 
 
-def buble(arr):
-    for i in range(len(arr)):
-        for j in range(i):
-            if arr[i] < arr[j]:
-                swap(i, j, arr)
-    return arr
+# def buble(arr):
+#     for i in range(len(arr)):
+#         for j in range(i):
+#             if arr[i] < arr[j]:
+#                 swap(i, j, arr)
+#     return arr
 
 
-array = [12, 5, 1523, 15, -54, -5, 0, 45555]
+# array = [12, 5, 1523, 15, -54, -5, 0, 45555]
 
-print(buble(array))
+# print(buble(array))
+
+# A. Петя и книга
+
+# gen_page = int(input())
+
+# pages_for_days = [15, 20, 20, 15, 10, 30, 45]
+# count = 0
+
+# for i in range(len(pages_for_days)):
+#     i = i + 1
+#     count = count + i
+#     if count == gen_page:
+#         print(count)
+#         break;
+
+
+# B. Открытки и фотографии
+
+# n = input()
+# temp = ''
+# i = 0
+# counter = 0
+
+# while len(n) > 0:
+#     if len(temp) == 0:
+#         temp += n[0]
+#         if len(n) > 1:
+#             n = n[1:]
+#         else:
+#             n = ''
+#     elif len(temp) > 0 and len(temp) < 5:
+#         if n[0] in temp:
+#             temp += n[0]
+#             if len(n) > 1:
+#                 n = n[1:]
+#             else:
+#                 n = ''
+#         else:
+#             temp = ''
+#             counter += 1
+#     elif len(temp) >= 5:
+#         counter += 1
+#         temp = ''
+
+# if len(n) == 0:
+#     counter += 1
+
+# print(counter)
+
+
+# D. cAPS lOCK
+
+word = input()
+result = ""
+
+if word.islower() or (word[0].isupper() and word[1:].islower()):
+    result = word
+elif len(word) and word.islower() == 1:
+    result = word.upper()
+elif len(word) and word.isupper() == 1:
+    result = word.lower()
+else:
+    for letter in word:
+        if letter.isupper():
+            result += letter.lower()
+        else:
+            result += letter.upper()
+print(result)
