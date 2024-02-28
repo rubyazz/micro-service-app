@@ -11,7 +11,7 @@ fastapi-admin
 celery
 nginx
 monitoring
-
+ci and cd
 
 Optional Dependencies¶
 Used by Pydantic:
