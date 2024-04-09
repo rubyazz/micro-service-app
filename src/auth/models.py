@@ -13,7 +13,7 @@ from sqlalchemy import (
     Table,
 )
 
-from database import Base
+from src.database import Base
 
 metadata = MetaData()
 

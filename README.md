@@ -35,5 +35,7 @@ You can install all of these with pip install "fastapi[all]
 
 and we need to research about base64
 
+for cashing -
+and admin fastapi -
 
 bla bla
